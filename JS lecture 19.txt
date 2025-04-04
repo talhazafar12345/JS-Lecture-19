@@ -1,0 +1,78 @@
+<!--<ul id="ul"><li>Home</li>
+    <li>Contact</li><li>Signup</li><li>Services</li><li>Portfolio</li>
+    <li>My Contact</li></ul>-->
+
+
+
+<!--<input type="text" name="" id="inp">
+
+
+<button onclick="add()">Add</button>
+<button onclick="deleteall()">Delete all</button>
+
+
+<ul id="ul">-
+
+</ul>-->
+
+
+style.css
+
+/*ul{
+    margin: 3px;
+    padding: 2px;
+}
+li{
+    margin: 3px;
+    padding: 2px;
+}*/
+
+app.js
+
+//console.log(document.childNodes[0])
+//var getUl=document.getElementById("ul")
+//console.log(getUl.lastChild.textContent="Talha")
+//document.write(document.childNodes[1].childNodes[0].childNodes[5].textContent = 'saylani')
+//console.log(getUl.childNodes[4].textContent="Talha")
+
+
+
+//var getInp=document.getElementById("inp")
+
+//var getUl=document.getElementById("ul")
+
+//function add(){
+
+  //if(getInp.value==""){
+   // alert("Please enter Some Value")
+  //}
+
+  //else( getUl.innerHTML+=`<li> ${getInp.value} <button onClick='edit(this)'> Edit</button> <button onClick='del(this)'> Delete</button> </li>`
+  //)
+
+  //getInp.value=""
+//}
+
+
+//function deleteall(){
+
+  //getUl.innerHTML=""
+
+//}
+
+
+//function edit(e){
+
+  //var pro=prompt("Enter Update Text"  , e.parentNode.firstChild.textContent)
+
+  //e.parentNode.firstChild.textContent=pro
+
+//}
+
+//function del(e){
+
+  //e.parentNode.remove()
+
+
+//}
+
