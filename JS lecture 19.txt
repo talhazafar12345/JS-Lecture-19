@@ -4,28 +4,65 @@
 
 
 
-<!--<input type="text" name="" id="inp">
+<<center class="p2"><h1>To -Do Application</h1>
+<input type="text" name="" id="inp">
+
+<button class="p1" onclick="add()">Add</button>
+
+<button class="p1" onclick="deleteall()">Delete All</button>
 
 
-<button onclick="add()">Add</button>
-<button onclick="deleteall()">Delete all</button>
+<ul id="ul">
 
+</ul>
 
-<ul id="ul">-
+</center>
 
-</ul>-->
 
 
 style.css
 
-/*ul{
-    margin: 3px;
-    padding: 2px;
+.p1{
+    background-color: orange;
+    width: 80px;
+    height: 30px;
+    border: 3px solid blue;
+    border-radius: 10px;
 }
+
+
+ul{
+    margin: 20px ;
+  width: fit-content;
+
+    
+   
+}
+
 li{
-    margin: 3px;
-    padding: 2px;
-}*/
+    margin: 5px 0;
+  padding: 5px;
+}
+
+
+.p2{
+    margin-top: 8%;
+}
+
+
+
+#inp{
+
+
+    border: 3px solid red;
+    color: green;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#ul{
+    color: red;
+}
 
 app.js
 
@@ -37,42 +74,43 @@ app.js
 
 
 
-//var getInp=document.getElementById("inp")
-
-//var getUl=document.getElementById("ul")
-
-//function add(){
-
-  //if(getInp.value==""){
-   // alert("Please enter Some Value")
-  //}
-
-  //else( getUl.innerHTML+=`<li> ${getInp.value} <button onClick='edit(this)'> Edit</button> <button onClick='del(this)'> Delete</button> </li>`
-  //)
-
-  //getInp.value=""
-//}
+var getInp=document.querySelector("#inp")
+var getUl=document.querySelector("#ul")
 
 
-//function deleteall(){
+function add(){
 
-  //getUl.innerHTML=""
+  if(getInp.value==""){
+    alert("Please enter some value")
+  }
 
-//}
+  else(getUl.innerHTML+=`<li> ${getInp.value} <button class='p1' onClick='edit(this)'> Edit </button> <button class='p1' onClick='del(this)'>Delete</button></li>`)
 
+getInp.value=""
 
-//function edit(e){
-
-  //var pro=prompt("Enter Update Text"  , e.parentNode.firstChild.textContent)
-
-  //e.parentNode.firstChild.textContent=pro
-
-//}
-
-//function del(e){
-
-  //e.parentNode.remove()
+}
 
 
-//}
+function deleteall(){
+
+getUl.innerHTML=""
+
+}
+
+
+function edit(e){
+
+var pro=prompt("Enter Updated Value" ,e.parentNode.firstChild.textContent)
+
+e.parentNode.firstChild.textContent=pro + " "
+
+}
+
+function del(e){
+
+e.parentNode.remove()
+
+
+
+}
 
